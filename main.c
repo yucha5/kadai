@@ -35,6 +35,16 @@ int main()
     }
 
   printf("Heads: %d, Tails: %d\n", head, tail);
+  
+  if(heads > tails)
+  {
+    printf("You won\n");
+  }
+
+  else
+  {
+    printf("You lost\n");
+  }
 
   if(heads > tails)
   {
