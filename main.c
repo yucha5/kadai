@@ -4,9 +4,14 @@
 
 int main()
 {
+  char name[50];
   int result;
   int head = 0;
   int tail = 0;
+
+  printf("Who are you? > ");
+  scanf("%s", name);
+  printf("Hello, %s!\n", name);
 
   srand(time(NULL));
 
@@ -30,6 +35,16 @@ int main()
     }
 
   printf("Heads: %d, Tails: %d\n", head, tail);
+
+  if(heads > tails)
+  {
+    printf("%s won!\n", name);
+  }
+
+  else
+  {
+    printf("%s lost!\n", name);
+  }
 
   return 0;
 }
